@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --blue: rgb(0, 98, 255);
+    --red: rgb(187, 7, 7);
+    --light-gray: rgb(245, 245, 245);
+    --dark-gray: rgb(245, 245, 245);
+    --selected-gray: rgb(195, 195, 195);
+}
+
+body{margin: 0px;}
+.flex-row{
+    display: flex;
+    flex-direction: column;
+}
+.flex-col{
+    display: flex;
+    flex-direction: row;
+}
+.header > *{
+    font-family: "Noto Sans", sans-serif;
+}
+.space{
+    justify-content: space-between;
+}
+.gap-sm{
+    gap:.5em;
+}
+.gap{
+    gap:1em;
+}
+.gap-big{
+    gap:2em;
+}
+.icon-sm{
+    font-size: 1.5em;
+}
+.icon{
+    font-size: 2em;
+}
+.icon-big{
+    font-size: 3.5em;
+}
+.pointer{
+    cursor: pointer;
+}
+.flex-center{
+    align-items: center;
+}
+#scroll-panel{
+    margin: 1em;
+    max-width: 800px;
+    margin: auto;
+    box-sizing: border-box;
+    padding-bottom: 10em;
+    width: 100%;
+}
+#scroll-panel *{
+    box-sizing: border-box;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: max-content;
+}
+#content{
+    flex:1;
+    display: flex;
+    flex-flow: column;
+        overflow-y: scroll;
+    padding: 1em;
+    background-color: var(--light-gray);
+    height:auto;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.hover-icon{
+ display: none;   
+}
+form{
+    margin: 0px 1em 0px 1em;
+}
+form  *{
+    font-family: "Noto Sans", sans-serif;
+}
+.truncate{
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: fit-content;
+    height: 4em;
+}
+.shrink{
+
+    min-width: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .icon-sm{
+        font-size: 1em;
+    }
+    .icon{
+        font-size: 1.5em;
+    }
+    .icon-big{
+        font-size: 2.5em;
+    }
+    
+  }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="css/loading.css">
+
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="header flex-col space flex-center" id="header">
+            <div id="news"><i class="fa-solid fa-newspaper icon-big pointer"></i></div>
+            <div class="search-bar-container flex-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search-bar" placeholder="Recherche.....">
+            </div>
+
+            <div class="flex-col gap icon-container">
+                <i class="fa-solid fa-plus icon-sm pointer" id="plus"></i>
+                <i class="fa-solid fa-close icon-sm pointer" id="close" style="display: none;"></i>
+                <div>
+                    <i class="fa-solid fa-ellipsis-vertical icon-sm pointer drop-container" id="options"></i>
+                    <div id="drop-down">
+                        <div style="padding: .5em; border-bottom: .5px solid black"class="pointer" value="*">Toutes les catégories</div>
+
+                        <div class="drop-content font">
+                            <div >alol</div>
+                            <div>alo2l</div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+        <div id="content">
+
+
+            <div id="scroll-panel" class="flex-row flex-center gap-big">
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="js/API.js"></script>
+<script src="js/UI.js"></script>
+<script src="js/image.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/PageManager.js"></script>
